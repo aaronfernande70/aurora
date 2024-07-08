@@ -6,9 +6,9 @@ export default {
 
 export const DefaultClosed = {
   args: {
-    title: "accordion title",
+    title: "Accordion title",
     children:
-      "Epcot is a theme park at Walt Disney World Resort featuring exciting          attractions, international pavilions, award-winning fireworks and          seasonal special events.",
+      "Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and  seasonal special events.",
     variant: "primary",
     open: false,
   },
@@ -16,9 +16,9 @@ export const DefaultClosed = {
 
 export const DefaultOpen = {
   args: {
-    title: "accordion title",
+    title: "Accordion title",
     children:
-      "Epcot is a theme park at Walt Disney World Resort featuring exciting          attractions, international pavilions, award-winning fireworks and          seasonal special events.",
+      "Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.",
     variant: "primary",
     open: true,
   },

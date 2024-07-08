@@ -1,17 +1,24 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 
 import "./accordion.css";
 
-const Accordion = ({ title, children, open, onChange }: any) => {
+interface AccordionProps {
+  children: ReactNode | string;
+  title: ReactNode | string;
+  open?: boolean;
+  onChange?: Function;
+}
+
+const Accordion = ({ title, children, open, onChange }: AccordionProps) => {
   const [opened, setOpened] = useState(open);
 
   return (
     <div className="Aurora_accordion">
       <details
-        open={open}
+        open={!!open}
         onToggle={(e: any) => {
           setOpened(!!e?.target?.open);
-          onChange(e.target.open);
+          if (onChange) onChange(e.target.open);
         }}
       >
         <summary className="Aroura_accordion_title">

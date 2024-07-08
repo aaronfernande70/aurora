@@ -6,13 +6,16 @@
 
 
 .Aroura_accordion_title {
-    font-size: large;
+    font-size: larger;
     width: inherit; 
     padding: 1rem 0;
     border-bottom: 1px rgba(119, 119, 119, 0.5) solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .Aurora_downArrow {
@@ -36,12 +39,5 @@
 
 summary {
     outline: none;
-    /* Hides marker on Chrome */
     list-style: none;
   }
-  
-  summary::-webkit-details-marker {
-    /* Hides marker on Safari */
-    /*display: none;*/
-  }
-  
