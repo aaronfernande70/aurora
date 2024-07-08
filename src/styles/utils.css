@@ -1,0 +1,9 @@
+*:focus-visible {
+    outline: 1px black dashed;
+    outline-offset: 2px;
+  }
+
+  button {
+    background-color: inherit;
+    border: none;
+  }

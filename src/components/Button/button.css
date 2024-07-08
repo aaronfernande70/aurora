@@ -1,0 +1,23 @@
+
+.Aurora_Style_Button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.Aurora_Style_Button:disabled{
+    opacity: 0.5;
+}
+
+.Aurora_Style_Button_primary {
+    background-color: black;
+    color: white;
+}
+
+.Aurora_Style_Button_secondary {
+    background-color: white;
+    color: black;
+}
+

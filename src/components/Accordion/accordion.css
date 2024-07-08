@@ -1,0 +1,47 @@
+.Aurora_accordion{
+    width: 100%;
+    transition: 300ms ease all;
+
+}
+
+
+.Aroura_accordion_title {
+    font-size: large;
+    width: inherit; 
+    padding: 1rem 0;
+    border-bottom: 1px rgba(119, 119, 119, 0.5) solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Aurora_downArrow {
+    width: 2rem;
+    transition: 300ms ease all;
+    height: 2rem;
+}
+
+.Aurora_accordion_content {
+    padding: 1rem 0;
+}
+
+.Aurora_accordion_closed {
+    height: 0;
+    display: none;
+}
+
+.Aurora_downArrow_inverted {
+    rotate: -180deg;
+}
+
+summary {
+    outline: none;
+    /* Hides marker on Chrome */
+    list-style: none;
+  }
+  
+  summary::-webkit-details-marker {
+    /* Hides marker on Safari */
+    /*display: none;*/
+  }
+  
