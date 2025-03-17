@@ -1,0 +1,25 @@
+.Aurora_Modal {
+ width: 80%;
+ height: 80%;
+ border-radius: 0.5rem;
+ border-color: rgba(196, 196, 196, 0.999);
+ box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.Aurora_Modal_Header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+
+.Aurora_Modal_Content{
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 80%;
+    height: fit-content;
+}

@@ -7,6 +7,7 @@ interface ButtonProps {
   children: ReactNode | string;
   className?: string;
   variant?: "primary" | "secondary";
+  onClick?: () => void;
 }
 
 const Button = ({ children, className, variant, ...props }: ButtonProps) => {
