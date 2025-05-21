@@ -28,6 +28,7 @@ export const ModalStory = (args: any) => {
       <Button onClick={handleOpen}>Open Modal</Button>
       <Modal {...args} isOpen={open} onClose={handleClose}>
         <p>This is modal content.</p>
+        <button>button</button>
       </Modal>
     </>
   );
