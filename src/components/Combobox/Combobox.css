@@ -1,0 +1,82 @@
+/* Container for the combobox */
+.Aurora_Style_Combobox {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+/* Input field styling */
+.Aurora_Style_Input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Dropdown container styling */
+.Aurora_Style_Dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Option styling */
+.Aurora_Style_Option {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hover effect for options */
+.Aurora_Style_Option:hover {
+    background-color: #f0f0f0;
+}
+
+/* Selected option styling for dropdown */
+.Aurora_Style_Option[data-selected="true"] {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+/* Highlighted option styling */
+.Aurora_Style_Option--highlighted {
+    background-color: #d9eaff; /* Light blue background for highlighted option */
+    color: #0056b3; /* Dark blue text for better contrast */
+    font-weight: bold; /* Make the text bold */
+    border-left: 4px solid #0056b3; /* Add a visual indicator on the left */
+}
+
+/* Select dropdown styling */
+.Aurora_Style_Select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Add a caret for the select dropdown */
+.Aurora_Style_Select::after {
+    content: '▼';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
